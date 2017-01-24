@@ -1,0 +1,126 @@
+﻿.display-none {
+  display: none;
+}
+
+body{
+  font-size: 15px;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.invisButton {
+    background: transparent;
+    border: none !important;
+}
+
+.controlPanel { /*Used in the control panel*/
+    top: 100px;
+    bottom: 0;
+    position: fixed;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 2px solid #eee;
+}
+
+.controlPanel::-webkit-scrollbar { /*These webkits customize the appearance of the scroll bars.*/
+    width: 6px;
+}
+ 
+.controlPanel::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+.controlPanel::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+}
+
+.traineeSidebar {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #fff;
+    border: 2px solid #eee;
+    /*box-shadow: 1px 1px 1px #888888;*/
+  }
+
+.traineeSidebar::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+.traineeSidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+.traineeSidebar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+}
+
+.traineeSidebarRight {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #fff;
+    border: 2px solid #eee;
+    /*box-shadow: -1px 1px 1px  #888888;*/
+  }
+
+.traineeSidebarRight::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+.traineeSidebarRight::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+.traineeSidebarRight::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+}
+
+
+
+.panel {
+    border-radius: 0px;
+}
+
+@media only screen and (min-width : 300px) {
+
+    .h1 {
+        font-size:10px;
+    }
+   .text {
+    font-size: 20px;
+   }
+
+}
+
+.test-spin  {
+    animation: spin 2s infinite linear;
+}
+

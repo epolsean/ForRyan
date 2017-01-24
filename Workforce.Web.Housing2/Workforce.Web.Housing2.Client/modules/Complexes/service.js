@@ -1,0 +1,59 @@
+﻿(function (ga) {
+    'use strict';
+
+    /*Refer to the control panel's service to get a better understanding on these services.  */
+
+    ga.complex.factory('complexGetService', ['$http', function ($http) {
+        var url = 'http://ec2-34-193-194-23.compute-1.amazonaws.com/HousingRest/api/housingcomplex';
+        return {
+            get: function (pass, fail) {
+                $http({
+                    method: 'get',
+                    url: url
+                }).then(pass, fail);
+            }
+        }
+    }]);
+
+    ga.complex.factory('complexPostService', ['$http', function ($http) {
+        var url = 'http://ec2-34-193-194-23.compute-1.amazonaws.com/HousingRest/api/housingcomplex';
+        return {
+            addComplex: function (info, pass, fail) {
+                $http({
+                    method: 'post',
+                    url: url,
+                    data: info
+                }).then(pass, fail);
+            }
+        }
+    }]);
+
+    ga.complex.factory('complexEditService', ['$http', function ($http) {
+        var url = 'http://ec2-34-193-194-23.compute-1.amazonaws.com/HousingRest/api/housingcomplex';
+        return {
+            editComplex: function (info, pass, fail) {
+                $http({
+                    method: 'put',
+                    url: url,
+                    data: info
+                }).then(pass, fail);
+            }
+        }
+    }]);
+    ga.complex.factory('complexDeleteService', ['$http', function ($http) {
+        var url = 'http://ec2-34-193-194-23.compute-1.amazonaws.com/HousingRest/api/housingcomplex';
+        return {
+            removeTheComplex: function (data, pass, fail) {
+                $http({
+                    method: 'delete',
+                    url: url,
+                    data: data,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(pass, fail);
+            }
+        }
+    }]);
+
+})(window.ahApp);
